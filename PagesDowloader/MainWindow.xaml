@@ -1,0 +1,54 @@
+﻿<Window x:Class="PagesDowloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PagesDowloader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox 
+            x:Name="adressTextBox"
+            HorizontalAlignment="Left" 
+            Margin="31,20,0,0" 
+            Text="TextBox" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="590" 
+            Height="25"/>
+        <TextBox 
+            x:Name="bodyTextBox"
+            HorizontalAlignment="Left" 
+            Margin="31,120,0,0" 
+            Text="TextBox" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="726" 
+            Height="256"/>
+        <Button 
+            Content="Load" 
+            HorizontalAlignment="Left" 
+            Margin="645,10,0,0" 
+            VerticalAlignment="Top" 
+            Width="112" 
+            Height="37" 
+            Click="Button_Click"/>
+        <Label 
+            x:Name="statusLabel"
+            Content="Label" 
+            HorizontalAlignment="Left" 
+            Margin="31,63,0,0" 
+            VerticalAlignment="Top" 
+            Width="590" 
+            Height="42"/>
+        <Button 
+            Content="Save" 
+            HorizontalAlignment="Left" 
+            Margin="645,66,0,0" 
+            VerticalAlignment="Top" 
+            Width="112" 
+            Height="39"
+            x:Name="saveButton" Click="saveButton_Click"/>
+
+    </Grid>
+</Window>
